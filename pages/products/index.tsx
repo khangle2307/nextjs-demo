@@ -5,9 +5,6 @@ import React from "react";
 const ListProduct: React.FC = () => {
   return (
     <div>
-      <Head>
-        <title>List product</title>
-      </Head>
       <div>
         <Link href={"/products/1"}>
           product 1
