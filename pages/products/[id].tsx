@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { useRouter } from "next/router";
 
 const DetailProduct = () => {
@@ -5,7 +6,12 @@ const DetailProduct = () => {
    const { id } = router.query;
    return (
       <div>
-         Detail Product id : { id } 
+         <Head>
+            <title>Detail Product</title>
+         </Head>
+         <h1>
+            Detail Product id : { id } 
+         </h1>
       </div>
    );
 }
